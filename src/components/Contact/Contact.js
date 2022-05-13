@@ -10,7 +10,6 @@ import SwipeableViews from "react-swipeable-views/lib/SwipeableViews";
 const Contact = ({ data, deleteContactHandler }) => {
   return (
     <SwipeableViews
-      enableMouseEvents
       slideStyle={{ padding: "1px" }}
       style={{ padding: "5px  10px" }}
     >
@@ -18,7 +17,7 @@ const Contact = ({ data, deleteContactHandler }) => {
         className={`rounded-md w-full h-full flex items-center justify-between ring-1 bg-white dark:bg-slate-800 ring-slate-200 dark:ring-slate-800 transition-all hover:ring-2 overflow-hidden`}
       >
         <Link
-         className="flex justify-between w-full" to={`/contacts/contact/${data.id}`}>
+         className="flex justify-between w-10/12" to={`/contacts/contact/${data.id}`}>
           <div className="px-4 py-2 h-full flex items-center">
             <UserCircleIcon
               className="w-14 h-14 text-slate-700 dark:text-slate-500"
